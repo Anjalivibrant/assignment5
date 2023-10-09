@@ -7,7 +7,10 @@ body {
   background:rgb(5, 5, 31);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
 /* Navbar */
 
 .topnav {
@@ -18,17 +21,22 @@ body {
 .topnav a {
   float: left;
   display: block;
+  justify-content: space-between;
   color: white;
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-bottom: 3px solid transparent;
 }
 
 .topnav a:hover {
-  color: gray;
+  border-bottom: 3px solid red;
 }
 
+.topnav a.active{
+  border-bottom: 3px solid red;
+}
 .topnav .icon {
   display: none;
 }
@@ -324,3 +332,4 @@ footer .bottom-details .bottom_text{
     width: 100%;
   }
 }
+
